@@ -6,7 +6,6 @@ const fidget = document.querySelector(".fidget");
 
 btn.addEventListener("click", function(){
     const randomFiget = getRandomFiget();
-    console.log(randomFiget);
     fidget.textContent = figets[randomFiget];
 });
 
