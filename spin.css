@@ -1,9 +1,51 @@
-@keyframes spinner {
+@keyframes still {
     100% {
       transform: rotate(0deg);
     }
   }
-  
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dspin {
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
+  @keyframes tspin {
+    100% {
+      transform: rotate(1080deg);
+    }
+  }
+
+  @keyframes qspin {
+    100% {
+      transform: rotate(1440deg);
+    }
+  } 
+
+  @keyframes shake {
+    0% {
+      transform: translate(8px, 0);
+    }
+    25% {
+      transform: translate(-5px, 0);
+    }
+    50%{
+      transform: translate(8px, 0); 
+    }
+    75%{
+      transform: translate(-10px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
   .loading-container {
     margin: 0 auto;
     text-align: center;
@@ -19,7 +61,7 @@
     background: url('img/zspin.png') center center;
     background-size: contain;
     /* transition-origin: 50% 50%; */
-    animation: spinner 3s infinite alternate ease-in-out;
+    animation: still;
   }
 
   .loading-text {
